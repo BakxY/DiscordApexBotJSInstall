@@ -1,0 +1,16 @@
+[Unit]
+Description=Sespra_AG_Apex_Status_Bot_Type_Script_Edition_4_Discord_With_Features_4_Maps_Shop_Ranked_Stats_Ping_Help_and_more
+
+[Service]
+WorkingDirectory=/usr/local/DiscordBot/nodejs/src
+ExecStart=ts-node main.ts
+
+Restart=always
+RestartSec=10
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=DiscordBot
+
+[Install]
+WantedBy=multi-user.target
